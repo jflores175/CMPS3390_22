@@ -15,12 +15,14 @@ public class Main {
         FoodItems[] foodItems = FoodItems.values();
         Tools[] tools = Tools.values();
         ToolUses[] toolUses = ToolUses.values();
+        Clothes[] clothes = Clothes.values();
+        Weapons[] weapons = Weapons.values();
 
         System.out.print("How many items do you want: ");
         int itemCnt = Integer.parseInt(scan.nextLine());
 
         for (int i = 0; i <itemCnt; i++) {
-            int type = ran.nextInt(2);
+            int type = ran.nextInt(4);
             switch (type) {
                 case 0 -> {
                     int foodIndex = ran.nextInt(foodItems.length);
@@ -41,9 +43,29 @@ public class Main {
                     Tool tmpTool = new Tool(toolName, toolPrice, toolQty, use);
                     items.add(tmpTool);
                 }
+                case 2 -> {
+                    int clothingIndex = ran.nextInt(clothes.length);
+                    String clothingName = clothes[clothingIndex].toString();
+                    float clothingPrice = ran.nextFloat(100);
+                    int clothingQty = ran.nextInt(20);
+                    float clothingDef = ran.nextFloat(20);
+                    Clothing tmpClothing = new Clothing(clothingName, clothingPrice, clothingQty, clothingDef);
+                    items.add(tmpClothing);
+                }
+                case 3 -> {
+                    int weaponIndex = ran.nextInt(weapons.length);
+                    String weaponName = weapons[weaponIndex].toString();
+                    float weaponPrice = ran.nextFloat(100);
+                    int weaponQty = ran.nextInt(15);
+                    float weaponAtk = ran.nextFloat(50);
+                    Weapon tmpWeapon = new Weapon(weaponName, weaponPrice, weaponQty, weaponAtk);
+                    items.add(tmpWeapon);
+                }
             }
         }
 
+        //Clothing a = new Clothing("shirt", 10, 1, 5);
+        //System.out.println(a);
         for(Item i : items) {
             System.out.println(i);
         }
