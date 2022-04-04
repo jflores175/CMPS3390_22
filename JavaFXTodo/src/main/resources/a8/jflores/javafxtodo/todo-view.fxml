@@ -14,7 +14,7 @@
           <Tab onSelectionChanged="#onTabChanged" text="Groceries" />
         </tabs>
       </TabPane>
-      <ListView fx:id="listItems" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+      <ListView fx:id="listItems" onMouseClicked="#onItemClicked" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
       <HBox spacing="10.0">
          <children>
             <TextField fx:id="txtItem" onAction="#onAddItem" HBox.hgrow="ALWAYS" />

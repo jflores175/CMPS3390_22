@@ -18,6 +18,10 @@ HBox {
     -fx-background-color: #808080;
 }
 
+.list-view {
+    -fx-background-color: #273c51;
+}
+
 .list-cell:odd {
     -fx-background-color: #6a9ac8;
 }
