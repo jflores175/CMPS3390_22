@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="4dp"
         android:layout_weight="1"
-        app:cardBackgroundColor="@color/design_default_color_primary"
+        app:cardBackgroundColor="#0080B3"
         app:cardCornerRadius="14dp"
         app:cardElevation="2dp"
         app:contentPadding="8dp">
