@@ -19,7 +19,7 @@ public class GameView extends SurfaceView implements Runnable {
 
     public GameView(Context context, Point screenSize) {
         super(context);
-        board = new Board(screenSize, getResources()); //needs point that has screensize but need to get it from activity
+        board = new Board(screenSize, getResources(), (GameActivity)context); //needs point that has screensize but need to get it from activity
         // screensize must be passed into us
     }
 
