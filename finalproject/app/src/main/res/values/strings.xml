@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">finalproject</string>
+    <string name="start">Start</string>
+    <string name="game_over">Game Over</string>
+    <string name="touch_continue">Tap the screen to retry</string>
+    <string name="title_text">Struggles of a Chubby Bird</string>
+</resources>
